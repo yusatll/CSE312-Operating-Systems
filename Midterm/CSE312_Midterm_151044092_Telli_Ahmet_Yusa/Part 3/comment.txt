@@ -1,0 +1,23 @@
+fileSystemOper fileSystem.data mkdir “/usr”
+
+fileSystemOper fileSystem.data mkdir “/os”
+
+fileSystemOper fileSystem.data mkdir “/usr/ysa"
+
+fileSystemOper fileSystem.data mkdir “/usr/ysa/file1”
+
+fileSystemOper fileSystem.data mkdir “/os/midterm”
+
+fileSystemOper fileSystem.data mkdir “/bin/ysa”
+
+fileSystemOper fileSystem.data list “/”
+
+fileSystemOper fileSystem.data write “/usr/ysa” linuxFile.data
+
+fileSystemOper fileSystem.data read “/usr/ysa” linuxFile2.data
+
+fileSystemOper fileSystem.data rmdir “/usr/ysa/file1”
+
+fileSystemOper fileSystem.data dumpe2fs
+
+fileSystemOper fileSystem.data del “/usr/ysa”
